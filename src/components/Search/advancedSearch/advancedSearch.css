@@ -1,0 +1,40 @@
+.Advanced-search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .Advanced-search-container input[type="text"] {
+    padding: 10px;
+    width: 750px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    outline: none;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #edede3;
+  }
+  
+  select {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+  
+.buttons {
+  display: inline-block;
+  min-width: 25%;
+}
+  

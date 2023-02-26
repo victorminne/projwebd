@@ -1,0 +1,22 @@
+.object-details {
+    margin: 20px;
+    color: #edede3;
+  }
+  
+  .object-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .object-details-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .object-details p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
