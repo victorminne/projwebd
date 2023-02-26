@@ -8,7 +8,7 @@ const HighlightCards = () => {
     const fetchObjects = async () => {
       const response = await fetch('https://collectionapi.metmuseum.org/public/collection/v1/search?q=%27%27&isHighlight=true');
       const data = await response.json();
-      const objectIDs = data.objectIDs.slice(0, 12); // Limit to 10 objects
+      const objectIDs = data.objectIDs.slice(0, 12);
       const objectDetails = await Promise.all(
         objectIDs.map(async (objectID) => {
           const response = await fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`);
@@ -17,6 +17,7 @@ const HighlightCards = () => {
         })
       );
       setObjects(objectDetails);
+      console.log(objects)
     };
     fetchObjects();
   }, []);

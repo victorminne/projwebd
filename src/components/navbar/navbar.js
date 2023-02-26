@@ -27,12 +27,12 @@ const Navbar = () => {
   return (
     <div>
       <div className="topnav">
-        <a className="active" href="/">Home</a>
-        <a href="/search">Search</a>
-        <a href="/contact">Contact</a>
+        <a className="active" href="/" data-testid='home-link'>Home</a>
+        <a href="/search" data-testid='search-link'>Search</a>
+        <a href="/contact" data-testid='contact-link'>Contact</a>
         <div className="search-container">
           <form onSubmit={handleSearchSubmit}>
-            <input type="text" value={searchTerm} onChange={handleInputChange} placeholder="search then press enter" />
+            <input type="text" value={searchTerm} onChange={handleInputChange} placeholder="search then press enter" data-testid='search-input' />
           </form>
         </div>
       </div> 
@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className="search-cards">
           {searchResults.map((result) => (
             <a key={result.objectID} href={`/detail/${result.objectID}`}>
-              <div key={result.objectID} className="search-card">
+              <div key={result.objectID} data-testid={result.title} className="search-card">
                 <h3 className="search-card-title">{result.title}</h3>
                 <img src={result.primaryImageSmall} alt={result.title} className="search-card-image"/>
               </div>

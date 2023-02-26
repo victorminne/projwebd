@@ -33,11 +33,9 @@ const Footer = () => {
           </div>
 
           <div className="button">
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
             <div className='icon'>
               <i className="fab fa-youtube"></i>
             </div>
-            </a>
           </div>
           
         </div>
